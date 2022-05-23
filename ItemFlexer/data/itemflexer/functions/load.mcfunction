@@ -9,6 +9,7 @@ scoreboard objectives add ifl.dummy dummy
 scoreboard objectives add display_item trigger
 
 # Constants
+scoreboard players set #-1 ifl.dummy -1
 scoreboard players set #10 ifl.dummy 10
 scoreboard players set #100 ifl.dummy 100
 

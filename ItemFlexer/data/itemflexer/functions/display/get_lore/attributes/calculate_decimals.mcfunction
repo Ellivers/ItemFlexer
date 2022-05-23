@@ -1,6 +1,5 @@
-############################################################
+# Called by 
 # Splits the attribute amount into several scores
-############################################################
 
 scoreboard players operation #attribute_amount_whole ifl.dummy = #attribute_amount ifl.dummy
 scoreboard players operation #attribute_amount_whole ifl.dummy /= #100 ifl.dummy
