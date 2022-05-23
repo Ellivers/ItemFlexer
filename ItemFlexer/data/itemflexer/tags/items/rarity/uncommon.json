@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:creeper_banner_pattern",
+        "minecraft:skull_banner_pattern",
+        "minecraft:experience_bottle",
+        "minecraft:dragon_breath",
+        "minecraft:elytra",
+        "minecraft:dragon_head",
+        "minecraft:player_head",
+        "minecraft:zombie_head",
+        "minecraft:creeper_head",
+        "minecraft:skeleton_skull",
+        "minecraft:wither_skeleton_skull",
+        "minecraft:heart_of_the_sea",
+        "minecraft:nether_star",
+        "minecraft:totem_of_undying",
+        "minecraft:enchanted_book"
+    ]
+}
