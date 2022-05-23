@@ -1,6 +1,5 @@
-############################################################
+# Called by itemflexer:display/get_lore/all
 # Gets the special book lore
-############################################################
 
 execute if data storage ifl:storage item.tag.author run data modify storage ifl:storage lore_add set value '{"translate":"book.byAuthor","with":[{"nbt":"item.tag.author","storage":"ifl:storage"}],"color":"gray"}'
 execute if data storage ifl:storage item.tag.author run function itemflexer:display/get_lore/add

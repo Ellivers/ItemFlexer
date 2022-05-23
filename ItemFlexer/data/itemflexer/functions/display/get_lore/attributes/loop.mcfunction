@@ -1,6 +1,5 @@
-############################################################
+# Called recursively and by itemflexer:display/get_lore/all
 # Gets the item's attributes
-############################################################
 
 scoreboard players add @s ifl.dummy2 1
 

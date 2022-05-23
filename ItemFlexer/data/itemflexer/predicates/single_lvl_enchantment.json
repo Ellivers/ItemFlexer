@@ -1,0 +1,140 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:aqua_affinity"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:channeling"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:binding_curse"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:vanishing_curse"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:flame"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:infinity"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:mending"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:multishot"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "enchantments": [
+                            {
+                                "enchantment": "minecraft:silk_touch"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

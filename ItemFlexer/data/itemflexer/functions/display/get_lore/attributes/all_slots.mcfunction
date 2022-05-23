@@ -1,6 +1,5 @@
-############################################################
+# Called by itemflexer:display/get_lore/attributes/loop
 # Displays the attribute with all slots
-############################################################
 
 data modify storage ifl:storage lore_add set value '["\\n",{"translate":"item.modifiers.mainhand","color":"gray"}]'
 function itemflexer:display/get_lore/add

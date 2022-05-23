@@ -1,6 +1,5 @@
-############################################################
+# Called by various functions
 # Adds one line to the lore
-############################################################
 
 scoreboard players add @s ifl.dummy 1
 

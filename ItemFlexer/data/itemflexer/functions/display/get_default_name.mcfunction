@@ -1,6 +1,5 @@
-############################################################
+# Called by itemflexer:display/display
 # Gets the item's default name
-############################################################
 
 scoreboard players set @s ifl.dummy 1
 

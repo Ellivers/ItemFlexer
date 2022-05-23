@@ -1,6 +1,5 @@
-############################################################
+# Called by itemflexer:display/get_lore/attributes/loop and itemflexer:display/get_lore/attributes/all_slots
 # Adds the "+x <attribute name>" part of the attribute info
-############################################################
 
 execute if score #attribute_operation ifl.dummy matches 0 run function itemflexer:display/get_lore/attributes/calculate_decimals
 

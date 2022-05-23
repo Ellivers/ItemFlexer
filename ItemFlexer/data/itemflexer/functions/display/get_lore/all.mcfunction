@@ -1,6 +1,5 @@
-############################################################
+# Called by itemflexer:display/display
 # Gets all the lore
-############################################################
 
 # HideFlags
 scoreboard players set #temp1 ifl.dummy 0
@@ -60,7 +59,7 @@ execute unless entity @s[tag=ifl.hideflags.attribute_modifiers] unless score #te
 execute if data storage ifl:storage item.tag{Unbreakable:1b} run data modify storage ifl:storage lore_add set value '{"translate":"item.unbreakable","color":"blue"}'
 execute unless entity @s[tag=ifl.hideflags.unbreakable] if data storage ifl:storage item.tag{Unbreakable:1b} run function itemflexer:display/get_lore/add
 
-# Custom item stuff
+# Custom item cases
 
 scoreboard players set #show_id ifl.dummy 0
 scoreboard players set #show_nbt_tags ifl.dummy 0
@@ -68,12 +67,15 @@ scoreboard players set #show_nbt_tags ifl.dummy 0
 execute unless data storage ifl:storage item.tag.tcc unless data storage ifl:storage item.tag.ctc run scoreboard players set #show_id ifl.dummy 1
 execute unless data storage ifl:storage item.tag.tcc unless data storage ifl:storage item.tag.ctc run scoreboard players set #show_nbt_tags ifl.dummy 1
 
-
+function #itemflexer:custom
 
 # TCC
 execute if data storage ifl:storage item.tag.tcc run data modify storage ifl:storage lore_add set value '[{"text":"tcc:","color":"dark_gray"},{"nbt":"SelectedItem.tag.tcc.id","entity":"@s"}]'
 execute if data storage ifl:storage item.tag.tcc run function itemflexer:display/get_lore/add
 
+
+execute if score #show_id ifl.dummy matches 1 run function itemflexer:display/get_lore/id
+execute if score #show_nbt_tags ifl.dummy matches 1 run function itemflexer:display/get_lore/nbt_count
 
 tag @s remove ifl.hideflags.other
 tag @s remove ifl.hideflags.enchantments
