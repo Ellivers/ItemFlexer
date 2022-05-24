@@ -1,7 +1,7 @@
 # Called recursively and by itemflexer:display/get_lore/all
 # Gets the item's attributes
 
-scoreboard players add @s ifl.dummy2 1
+scoreboard players add #temp3 ifl.dummy 1
 
 data modify storage ifl:storage attribute_modifier set from storage ifl:storage item.tag.AttributeModifiers[0]
 
@@ -46,4 +46,4 @@ execute unless data storage ifl:storage attribute_modifier.Slot if score #attrib
 data modify storage ifl:storage item.tag.AttributeModifiers append from storage ifl:storage item.tag.AttributeModifiers[0]
 data remove storage ifl:storage item.tag.AttributeModifiers[0]
 
-execute unless score @s ifl.dummy matches 16.. unless score @s ifl.dummy2 >= #temp0 ifl.dummy run function itemflexer:display/get_lore/attributes/loop
+execute unless score #current_lore_length ifl.dummy >= #max_lore_length ifl.dummy unless score #temp3 ifl.dummy >= #temp0 ifl.dummy run function itemflexer:display/get_lore/attributes/loop

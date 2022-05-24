@@ -12,6 +12,7 @@ scoreboard objectives add display_item trigger
 scoreboard players set #-1 ifl.dummy -1
 scoreboard players set #10 ifl.dummy 10
 scoreboard players set #100 ifl.dummy 100
+scoreboard players set #max_lore_length ifl.dummy 16
 
 execute unless score $advanced_tooltips.id ifl.dummy matches 0..1 run scoreboard players set $advanced_tooltips.id ifl.dummy 1
 execute unless score $advanced_tooltips.nbt ifl.dummy matches 0..1 run scoreboard players set $advanced_tooltips.nbt ifl.dummy 1

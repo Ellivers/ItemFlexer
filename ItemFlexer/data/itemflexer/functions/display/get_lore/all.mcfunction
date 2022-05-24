@@ -35,7 +35,7 @@ execute unless entity @s[tag=ifl.hideflags.other] if data storage ifl:storage it
 execute unless entity @s[tag=ifl.hideflags.other] run data modify storage ifl:storage item.tag.Enchantments set from storage ifl:storage item.tag.StoredEnchantments
 execute unless entity @s[tag=ifl.hideflags.other] run data modify entity @e[type=minecraft:armor_stand,tag=ifl.temp_item_holder,sort=nearest,limit=1] ArmorItems[0] set from storage ifl:storage item
 
-scoreboard players set @s ifl.dummy2 0
+scoreboard players set #temp3 ifl.dummy 0
 scoreboard players set #temp0 ifl.dummy 0
 execute store result score #temp0 ifl.dummy run data get storage ifl:storage item.tag.Enchantments
 
@@ -44,13 +44,13 @@ execute unless entity @s[tag=ifl.hideflags.enchantments] unless score #temp0 ifl
 execute if data storage ifl:storage item.tag.StoredEnchantments run data remove storage ifl:storage item.tag.Enchantments
 
 # Custom lore
-scoreboard players set @s ifl.dummy2 0
+scoreboard players set #temp3 ifl.dummy 0
 scoreboard players set #temp0 ifl.dummy 0
 execute store result score #temp0 ifl.dummy run data get storage ifl:storage item.tag.display.Lore
 execute unless score #temp0 ifl.dummy matches 0 run function itemflexer:display/get_lore/loop
 
 # Attribute modifiers
-scoreboard players set @s ifl.dummy2 0
+scoreboard players set #temp3 ifl.dummy 0
 scoreboard players set #temp0 ifl.dummy 0
 execute store result score #temp0 ifl.dummy run data get storage ifl:storage item.tag.AttributeModifiers
 execute unless entity @s[tag=ifl.hideflags.attribute_modifiers] unless score #temp0 ifl.dummy matches 0 run function itemflexer:display/get_lore/attributes/loop
